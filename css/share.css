@@ -1,0 +1,196 @@
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-normal {
+  font-weight: normal;
+}
+.text-italic {
+  font-style: italic;
+}
+.no-border {
+  border: 0 !important;
+}
+.border {
+  border: 1px #eaeaea solid;
+}
+.border-left {
+  border-left: 1px #eaeaea solid;
+}
+.border-right {
+  border-right: 1px #eaeaea solid;
+}
+.border-top {
+  border-top: 1px #eaeaea solid;
+}
+.border-bottom {
+  border-bottom: 1px #eaeaea solid;
+}
+.collapse-separate {
+  border-collapse: separate;
+}
+.collapse-collapse {
+  border-collapse: collapse;
+}
+.pos-abs {
+  position: absolute;
+}
+.pos-rel {
+  position: relative;
+}
+.pos-fix {
+  position: fixed;
+}
+.place-left {
+  float: left;
+}
+.place-right {
+  float: right;
+}
+.place-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.place-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.place-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.place-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.on-left {
+  margin-right: 5px;
+}
+.on-right {
+  margin-left: 5px;
+}
+.on-left-more {
+  margin-right: 10px;
+}
+.on-right-more {
+  margin-left: 10px;
+}
+.padding5 {
+  padding: 5px;
+}
+.padding10 {
+  padding: 10px;
+}
+.padding15 {
+  padding: 15px;
+}
+.padding20 {
+  padding: 20px;
+}
+.margin5 {
+  margin: 5px;
+}
+.margin10 {
+  margin: 10px;
+}
+.margin15 {
+  margin: 15px;
+}
+.margin20 {
+  margin: 20px;
+}
+.nlm {
+  margin-left: 0 !important;
+}
+.nrm {
+  margin-right: 0 !important;
+}
+.ntm {
+  margin-top: 0 !important;
+}
+.nbm {
+  margin-bottom: 0 !important;
+}
+.nlp {
+  padding-left: 0 !important;
+}
+.nrp {
+  padding-right: 0 !important;
+}
+.ntp {
+  padding-top: 0 !important;
+}
+.nbp {
+  padding-bottom: 0 !important;
+}
+.no-margin {
+  margin: 0  !important;
+}
+.no-padding {
+  padding: 0  !important;
+}
+.no-float {
+  float: none !important;
+}
+.block {
+  display: block !important;
+  float: none !important;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.hide,
+.no-display {
+  display: none !important;
+}
+.no-visible {
+  visibility: hidden !important;
+}
+.visible {
+  visibility: visible !important;
+}
+
+.shadow {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.opacity {
+  opacity: .9;
+}
+.half-opacity {
+  opacity: .5;
+}
+.hi-opacity {
+  opacity: .2;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+

@@ -1,0 +1,35 @@
+.example {
+  padding: 20px 40px 20px 60px;
+  border: 1px #ccc solid;
+  position: relative;
+  margin: 0 0 10px 0;
+  background-color: #fdfdfd !important;
+  min-height: 100px;
+}
+.example:before,
+.example:after {
+  display: table;
+  content: "";
+}
+.example:after {
+  clear: both;
+}
+.example:before {
+  position: absolute;
+  content: "example";
+  left: -5px;
+  top: 35px;
+  color: #999999 !important;
+  margin: 5px 10px;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
