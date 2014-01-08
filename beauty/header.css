@@ -18,6 +18,7 @@
 
 .header .icon {
   padding-right: 0.5em;
+  font-size:1em;
 }
 
 .header.cell .icon {
@@ -32,7 +33,6 @@
 
 .header.cell .content {
   display: table-cell;
-  padding-left: 0.5em;
 }
 
 /*--------------
@@ -92,6 +92,136 @@ h5.header {
 
 
 /*-------------------
+      Dividing
+--------------------*/
+
+.dividing.header {
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dividing.header .sub.header {
+  padding-bottom: 0.5em;
+}
+
+.dividing.header .icon {
+  margin-bottom: 0.2em;
+}
+
+/*-------------------
+        Block
+--------------------*/
+
+.block.header {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.5em 1em;
+}
+
+/*-------------------
+       Colors
+--------------------*/
+
+.blue.header {
+  color: #6ECFF5 !important;
+}
+
+.black.header {
+  color: #5C6166 !important;
+}
+
+.green.header {
+  color: #A1CF64 !important;
+}
+
+.red.header {
+  color: #D95C5C !important;
+}
+
+.purple.header {
+  color: #564F8A !important;
+}
+
+.teal.header {
+  color: #00B5AD !important;
+}
+
+.blue.dividing.header {
+  border-bottom: 3px solid #6ECFF5;
+}
+
+.black.dividing.header {
+  border-bottom: 3px solid #5C6166;
+}
+
+.green.dividing.header {
+  border-bottom: 3px solid #A1CF64;
+}
+
+.red.dividing.header {
+  border-bottom: 3px solid #D95C5C;
+}
+
+.purple.dividing.header {
+  border-bottom: 3px solid #564F8A;
+}
+
+.teal.dividing.header {
+  border-bottom: 3px solid #00B5AD;
+}
+
+/*-------------------
+      Inverted
+--------------------*/
+
+.inverted.header {
+  color: #FFFFFF;
+}
+
+.inverted.header .sub.header {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/*-------------------
+   Inverted Colors
+--------------------*/
+
+.inverted.black.header {
+  background-color: #5C6166 !important;
+  color: #FFFFFF !important;
+}
+
+.inverted.blue.header {
+  background-color: #6ECFF5 !important;
+  color: #FFFFFF !important;
+}
+
+.inverted.green.header {
+  background-color: #A1CF64 !important;
+  color: #FFFFFF !important;
+}
+
+.inverted.red.header {
+  background-color: #D95C5C !important;
+  color: #FFFFFF !important;
+}
+
+.inverted.purple.header {
+  background-color: #564F8A !important;
+  color: #FFFFFF !important;
+}
+
+.inverted.teal.header {
+  background-color: #00B5AD !important;
+  color: #FFFFFF !important;
+}
+
+.inverted.block.header {
+  border-bottom: none;
+}
+
+
+
+/*-------------------
         icon header
 --------------------*/
 
@@ -127,5 +257,17 @@ h5.header {
   display: block;
 }
 
+
+/*-------------------
+       Attached
+--------------------*/
+
+.attached.header {
+  background-color: #E0E0E0;
+  padding: 0.5em 1rem;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  border-radius: 0.3125em 0.3125em 0em 0em;
+}
 
 

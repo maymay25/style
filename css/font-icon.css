@@ -163,10 +163,6 @@ i.small.icon {
   font-size: 0.875em;
 }
 
-i.icon {
-  font-size: 1em;
-}
-
 i.large.icon {
   font-size: 1.5em;
   vertical-align: middle;
@@ -252,6 +248,7 @@ i.icon.fa.fa-spinner {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
 }
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {

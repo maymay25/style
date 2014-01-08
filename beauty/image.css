@@ -1,0 +1,88 @@
+.image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+img.image {
+  display: block;
+  background: none;
+}
+
+.image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*--------------
+     Rounded
+---------------*/
+.rounded.images .image,
+.rounded.images img,
+.rounded.image img,
+.rounded.image {
+  border-radius: 0.3125em;
+}
+
+/*--------------
+     Circular
+---------------*/
+
+.circular.images .image,
+.circular.images img,
+.circular.image img,
+.circular.image {
+  border-radius: 500rem;
+}
+
+/*--------------
+     Sizes
+---------------*/
+
+.small.images .image,
+.small.images img,
+.small.image {
+  width: 30px;
+  font-size: 0.8rem;
+}
+
+.normal.images .image,
+.normal.images img,
+.normal.image {
+  width: 60px;
+  font-size: 0.9rem;
+}
+
+.medium.images .image,
+.medium.images img,
+.medium.image {
+  width: 100px;
+  font-size: 0.9rem;
+}
+
+.big.images .image,
+.big.images img,
+.big.image {
+  width: 124px;
+  font-size: 1rem;
+}
+
+.large.images .image,
+.large.images img,
+.large.image {
+  width: 180px;
+  font-size: 1rem;
+}
+
+.cover.images .image,
+.cover.images img,
+.cover.image {
+  width: 260px;
+  font-size: 1.1rem;
+}
+
+
+
