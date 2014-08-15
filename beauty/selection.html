@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="todo">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/doc.css" rel="stylesheet">
+    <link href="css/share.css" rel="stylesheet">
+
+    <title>selection demo</title>
+
+    <style type="text/css">
+      ::selection {
+          background: inherit; 
+          color:#ff5f3e;
+      }
+
+      html {
+        -webkit-user-drag: none;
+      }
+
+      * {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+      }
+
+      html, text, p {
+        -webkit-user-select: text;
+        -khtml-user-select: text;
+        -moz-user-select: text;
+        -o-user-select: text;
+        user-select: text;
+      }
+
+    </style>
+
+</head>
+
+<body class="" ondragstart="return false">
+
+<div style="float:left;width:600px;height:1000px;">
+  <p>这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...</p>
+  <p>这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...</p>
+  <p>这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...</p>
+  <p>这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...</p>
+</div>
+
+<div style="float:left;width:200px;height:1000px;">
+  <ul>
+    <li>链接</li>
+    <li>链接</li>
+    <li>链接</li>
+    <li>链接</li>
+    <li>链接</li>
+    <li><a href="javascript:;">链接</a></li>
+  </ul>
+</div>
+
+</body>
+
+</html>
