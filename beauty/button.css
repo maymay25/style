@@ -103,7 +103,7 @@ button.animated .hidden.content {
 top: 50%;
 left: auto;
 right: -100%;
-margin-top: -.55em;
+margin-top: -.50em;
 }
 
 button.animated .hidden.content {
@@ -313,11 +313,11 @@ button.mini {
 }
 
 button.mini {
-  padding: 0.6em 0.8em 0.73em;
+  padding: 0.6em 0.8em 0.6em;
 }
 
 button.mini.icon {
-  padding: 0.6em 0.6em 0.73em;
+  padding: 0.6em 0.6em 0.6em;
 }
 
 button.tiny {
@@ -325,11 +325,11 @@ button.tiny {
 }
 
 button.tiny {
-  padding: 0.6em 0.8em 0.73em;
+  padding: 0.6em 0.8em 0.6em;
 }
 
 button.tiny.icon {
-  padding: 0.6em 0.6em 0.73em;
+  padding: 0.6em 0.6em 0.6em;
 }
 
 button.small {
