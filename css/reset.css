@@ -10,8 +10,6 @@ background:#ffffff;
 font-family: "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 font-size: 14px;
 color: #404040;
-font-weight: lighter;
-overflow-x: hidden;
 }
 
 html,body,* {
@@ -34,13 +32,6 @@ a:hover,
 a:active,
 .tile:active {
   outline: 0;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  border: 0;
-  -ms-interpolation-mode: bicubic;
 }
 button,
 input,

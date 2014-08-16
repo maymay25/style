@@ -1,19 +1,64 @@
-body {
-cursor: default;
-text-align: center;
+html {
 font-family: "Microsoft YaHei","WenQuanYi Micro Hei",SimHei,tohoma,Arial,Helvetica,sans-serif;
+background-color: #f1f2f3;
 font-size: 12px;
 color: #333;
 margin: 0;
 padding: 0;
-width: 100%;
-height: 100%;
-background: #FFF;
 -webkit-text-size-adjust: none;
 }
 
+a {
+color: #333;
+}
+
 a:hover {
-text-decoration: underline;
+color: #ed1b29;
+text-decoration: none;
+}
+
+a:visited {
+text-decoration: none;
+}
+
+body,p {
+margin: 0;
+padding: 0;
+}
+
+ol, ul, li {
+list-style: none;
+}
+
+ul {
+padding-left:0;
+margin-left:0;
+margin-right:0;
+}
+
+img {
+border: none;
+vertical-align: middle;
+}
+
+.w320 {
+width:320px;
+}
+
+.mt20 {
+margin-top: 20px;
+}
+
+.mr10 {
+margin-right: 10px;
+}
+
+.mr20 {
+margin-right: 20px;
+}
+
+.mb10 {
+margin-bottom: 10px;
 }
 
 .fl {
@@ -30,6 +75,7 @@ clear: both;
 }
 
 .main {
+margin-top: 15px;
 min-height: 740px;
 }
 
@@ -45,13 +91,14 @@ float: left;
 width: 30%;
 height: 500px;
 float: left;
-background: #eee;
+background: #fff;
 }
 
 
 .container {
-width: 980px;
-margin: 0 auto;
+width: 1000px;
+margin-left: auto;
+margin-right: auto;
 position: relative;
 }
 
@@ -77,14 +124,16 @@ overflow: visible;
   background: white;
   border-bottom: 1px solid #DDDDDD;
   background: url(../img/global_nav_wrap_bg.png) repeat;
-  height: 30px;
+  height: 32px;
   overflow: hidden;
   z-index: 4;
+  min-width: 1000px;
 }
 
 .global_nav .logo {
 width: 145px;
 height: 30px;
+margin-left: 30px;
 display: block;
 position: relative;
 _position: static;
@@ -106,7 +155,7 @@ background-position: 0 -30px;
 
 .global_nav .menu {
 position: relative;
-height: 30px;
+height: 32px;
 text-align: left;
 overflow: hidden;
 cursor: pointer;
@@ -114,9 +163,9 @@ cursor: pointer;
 
 .global_nav .menu a {
 display: inline-block;
-height: 30px;
+height: 32px;
 padding: 0 8px;
-line-height: 30px;
+line-height: 32px;
 font-size: 14px;
 color: #555;
 overflow: hidden;
@@ -126,6 +175,14 @@ overflow: hidden;
 text-decoration: none;
 background: #454545;
 color: #fbfbfb;
+}
+
+.global_nav .menu button {
+margin-top: 3px;
+}
+
+.global_nav .account {
+  margin-right: 30px;
 }
 
 .global_nav .bt1,
@@ -159,8 +216,6 @@ background-image: url(../img/diary_intro.png);
 background-repeat: no-repeat;
 background-position: center bottom;
 }
-
-
 
 
 /*footer*/
@@ -216,3 +271,137 @@ margin-left: 10px;
 .footer .icp {
 margin-right: 10px;
 }
+
+
+/*首页*/
+.mop_forums .card{
+width: 320px;
+background:#fff;
+float: left;
+overflow: hidden;
+zoom: 1;
+}
+
+.bg_dark_blue{
+background-color: #405f7c;
+}
+
+.bg_light_blue{
+background-color: #51bee9;
+}
+
+.mop_recommend_forum.border {
+border-top: 3px #ddd solid;
+}
+
+.mop_recommend_forum .title_bar {
+height: 40px;
+line-height: 40px;
+}
+
+.mop_recommend_forum .title_bar.no_bg {
+width: 280px;
+margin-top: 10px;
+border-bottom: 1px #ddd solid;
+margin-left: auto;
+margin-right: auto;
+}
+
+.mop_recommend_forum .title_bar .title {
+font-size: 16px;
+}
+
+.mop_recommend_forum .title_bar.bg .title {
+border-left: 5px #fff solid;
+color: #fff;
+padding-left: 10px;
+margin-left: 20px;
+}
+
+.mop_recommend_forum .title_bar .btn_more {
+background-color: #e5e5e5;
+border-radius: 4px;
+color: #666;
+display: inline-block;
+height: 20px;
+line-height: 20px;
+text-align: center;
+width: 45px;
+margin-top: 10px;
+float: right;
+text-decoration: none;
+}
+
+.mop_recommend_forum .title_bar.bg .btn_more {
+margin-right: 20px;
+}
+
+.mop_recommend_forum .title_bar .btn_more:hover {
+background-color: #c3c3c3;
+color: #666;
+}
+
+.mop_recommend_forum .items {
+width:280px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.mop_recommend_forum .item.txt {
+border-bottom: 1px #ddd solid;
+height: 40px;
+line-height: 40px;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.mop_recommend_forum .item.txt .link {
+font-size: 14px;
+margin-left: 5px;
+}
+
+.mop_recommend_forum .item.img {
+margin-top: 20px;
+}
+
+.mop_recommend_forum .item.img .link_wrap{
+line-height: 18px;
+margin-top: 15px;
+margin-bottom: 5px;
+white-space: nowrap;
+}
+
+.mop_recommend_forum .item.img .link {
+font-size: 14px;
+margin-left: 5px;
+font-weight: bold;
+}
+
+.mop_recommend_forum .item.img .intro {
+line-height: 22px;
+color: #999;
+}
+
+.mop_recommend_forum .item.img_with_txt {
+margin-top: 10px;
+border-bottom: 1px #ddd solid;
+}
+
+.mop_recommend_forum .item.img_with_txt .link_wrap {
+line-height: 20px;
+white-space: nowrap;
+}
+
+.mop_recommend_forum .item.img_with_txt .link {
+font-size: 14px;
+font-weight: bold;
+}
+
+.mop_recommend_forum .item.img_with_txt .intro{
+margin-top: 5px;
+line-height: 18px;
+color: #999;
+}
+
+
+
