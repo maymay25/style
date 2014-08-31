@@ -157,7 +157,7 @@
     </div>
   </div>
 
-  <div class="main" id="pjaxBox">
+  <div class="main">
 
     <div class="container">
 
@@ -898,10 +898,12 @@
       tritagHeight: 60
   });
 
+  c.css("visibility", "visible");
+
   g.find("img").each(function () {
       var o = $(this);
-      var l = o.data("src");;
-      o.attr("src", l).css("visibility", "visible")
+      var l = o.data("src");
+      o.attr("src", l).css("visibility", "visible");
   });
 
   (function () {

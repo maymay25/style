@@ -333,6 +333,7 @@ background: #fff;
 width:715px;
 float:left;
 margin-right: 20px;
+visibility: hidden;
 }
 
 .dta_slider .images {
@@ -346,7 +347,7 @@ top: 0;
 left: 0;
 width: 600px;
 height: 300px;
-/*display: none;*/
+display: none;
 }
 
 .dta_slider .image_wrap .cover {
