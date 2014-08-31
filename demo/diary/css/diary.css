@@ -15,7 +15,24 @@ background-color: #F5F5F5;
 border-left: 1px solid #D2D2D2;
 }
 
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+p,h1,h2,h3,h4,h5,h6,a,span,input {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+}
+
 html {
+-webkit-text-size-adjust: none;
 font-family: "Microsoft YaHei","WenQuanYi Micro Hei",SimHei,tohoma,Arial,Helvetica,sans-serif;
 background-color: #f1f2f3;
 font-size: 12px;
@@ -23,7 +40,6 @@ line-height: 1.5;
 color: #333;
 margin: 0;
 padding: 0;
--webkit-text-size-adjust: none;
 }
 
 a {

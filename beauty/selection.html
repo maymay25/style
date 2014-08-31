@@ -4,21 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="todo">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/doc.css" rel="stylesheet">
-    <link href="css/share.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/doc.css" rel="stylesheet">
+    <link href="../css/share.css" rel="stylesheet">
 
     <title>selection demo</title>
 
     <style type="text/css">
-      ::selection {
-          background: inherit; 
-          color:#ff5f3e;
-      }
-
-      html {
-        -webkit-user-drag: none;
-      }
 
       * {
         -webkit-user-select: none;
@@ -28,7 +20,7 @@
         user-select: none;
       }
 
-      html, text, p {
+      p,h1,h2,h3,h4,h5,h6,a,span,input {
         -webkit-user-select: text;
         -khtml-user-select: text;
         -moz-user-select: text;
@@ -40,13 +32,28 @@
 
 </head>
 
-<body class="" ondragstart="return false">
+<script type="text/javascript">
+  window.onmousedown=function(){
+    if(window.getSelection && event.button==0){
+      window.getSelection().removeAllRanges();
+    }
+  }
+
+  window.ondragstart = function(){
+    return false
+  }
+</script>
+
+<body class="">
 
 <div style="float:left;width:600px;height:1000px;">
   <p>这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...</p>
   <p>这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...</p>
   <p>这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...</p>
   <p>这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...这是一行文字这是一行文字...</p>
+
+  <input type="text" value="abc">
+
 </div>
 
 <div style="float:left;width:200px;height:1000px;">

@@ -751,143 +751,142 @@
 <script type="text/javascript">
 
 (function (a, b) {
-    b.fn.slideShow = function (e) {
-        var c = b.extend({}, b.fn.slideShow.defaults, e),
-            l = b(a),
-            p = typeof (c.slides) === "object" ? c.slides : b(c.slides),
-            q = typeof (c.trigs) === "object" ? c.trigs : b(c.trigs),
-            f = q.find(c.follow),
-            u = p.children(),
-            t = q.children(c.tritag),
-            m = c.tritagHeight,
-            r = t.length,
-            d = 0,
-            k = 0,
-            j = 0,
-            i = !$.support.leadingWhitespace,
-            g;
-        if (!r) {
-            return
-        }
-        var s = function (w) {
-            var y = p.find(".slide-" + k),
-                v = p.find(".slide-" + d),
-                x = v.css("zIndex");
-            pre_zi = y.css("zIndex");
-            if (k !== d) {
-                if (v.data("image")) {
-                    v.css("background-image", "url(" + v.data("image") + ")");
-                    v.removeAttr("data-image")
-                }
-                v.css({
-                    zIndex: 4
-                });
-                y.css({
-                    zIndex: 5
-                });
-                y.fadeOut("fast", function () {
-                    b(this).css({
-                        display: "block",
-                        zIndex: 1
-                    })
-                })
-            }
-            if (i) {
-                f.css({
-                    top: m * d
-                })
-            } else {
-                f.stop(true).animate({
-                    top: m * d
-                }, "fast", function () {
-                    f.css({
-                        top: m * d
-                    })
-                })
-            }
-            k = d;
-            if (w) {
-                o()
-            }
-        }, n = function () {
-                var v = u.length;
-                u.each(function (x, w) {
-                    var y = b(this),
-                        z;
-                    y.css({
-                        zIndex: 1,
-                        display: "block"
-                    });
-                    if (x === 0) {
-                        y.css({
-                            zIndex: 5
-                        })
-                    }
-                    y.addClass("slide-" + x)
-                });
-                t.each(function (x, w) {
-                    var y = b(this),
-                        z;
-                    y.addClass("trig-" + x)
-                })
-            }, o = function () {
-                j = setTimeout(function () {
-                    d = d + 1 >= r ? 0 : d + 1;
-                    s(1)
-                }, c.timer)
-            }, h = function () {
-                clearTimeout(j)
-            }, g;
-        n();
-        o();
-        (function () {
-            var v;
-            q.delegate(c.tritag, "mouseenter mouseleave", function (x) {
-                x.preventDefault();
-                x.stopPropagation();
-                var w = b(this);
-                if (x.type === "mouseenter") {
-                    h();
-                    clearTimeout(v);
-                    v = setTimeout(function () {
-                        d = parseInt(w.attr("class").match(/\d/g)[0]);
-                        s(0)
-                    }, 100)
-                } else {
-                    if (x.type === "mouseleave") {
-                        o()
-                    }
-                }
-            })
-        })();
-        p.bind("mouseenter mouseleave", function (v) {
-            if (v.type === "mouseenter") {
-                h()
-            } else {
-                if (v.type === "mouseleave") {
-                    o()
-                }
-            }
-        });
-        l.scroll(function (w) {
-            var v = q.offset().top + q.height() - b(this).scrollTop() - 200;
-            h();
-            if (v > 0) {
-                o()
-            }
-        })
-    };
-    b.fn.slideShow.defaults = {
-        slides: "",
-        trigs: "",
-        tritag: "",
-        follow: "",
-        timer: 4000
-    }
+  b.fn.slideShow = function (e) {
+      var c = b.extend({}, b.fn.slideShow.defaults, e),
+          l = b(a),
+          p = typeof (c.slides) === "object" ? c.slides : b(c.slides),
+          q = typeof (c.trigs) === "object" ? c.trigs : b(c.trigs),
+          f = q.find(c.follow),
+          u = p.children(),
+          t = q.children(c.tritag),
+          m = c.tritagHeight,
+          r = t.length,
+          d = 0,
+          k = 0,
+          j = 0,
+          i = !$.support.leadingWhitespace,
+          g;
+      if (!r) {
+          return
+      }
+      var s = function (w) {
+          var y = p.find(".slide-" + k),
+              v = p.find(".slide-" + d),
+              x = v.css("zIndex");
+          pre_zi = y.css("zIndex");
+          if (k !== d) {
+              if (v.data("image")) {
+                  v.css("background-image", "url(" + v.data("image") + ")");
+                  v.removeAttr("data-image")
+              }
+              v.css({
+                  zIndex: 4
+              });
+              y.css({
+                  zIndex: 5
+              });
+              y.fadeOut("fast", function () {
+                  b(this).css({
+                      display: "block",
+                      zIndex: 1
+                  })
+              })
+          }
+          if (i) {
+              f.css({
+                  top: m * d
+              })
+          } else {
+              f.stop(true).animate({
+                  top: m * d
+              }, "fast", function () {
+                  f.css({
+                      top: m * d
+                  })
+              })
+          }
+          k = d;
+          if (w) {
+              o()
+          }
+      }, n = function () {
+              var v = u.length;
+              u.each(function (x, w) {
+                  var y = b(this),
+                      z;
+                  y.css({
+                      zIndex: 1,
+                      display: "block"
+                  });
+                  if (x === 0) {
+                      y.css({
+                          zIndex: 5
+                      })
+                  }
+                  y.addClass("slide-" + x)
+              });
+              t.each(function (x, w) {
+                  var y = b(this),
+                      z;
+                  y.addClass("trig-" + x)
+              })
+          }, o = function () {
+              j = setTimeout(function () {
+                  d = d + 1 >= r ? 0 : d + 1;
+                  s(1)
+              }, c.timer)
+          }, h = function () {
+              clearTimeout(j)
+          }, g;
+      n();
+      o();
+      (function () {
+          var v;
+          q.delegate(c.tritag, "mouseenter mouseleave", function (x) {
+              x.preventDefault();
+              x.stopPropagation();
+              var w = b(this);
+              if (x.type === "mouseenter") {
+                  h();
+                  clearTimeout(v);
+                  v = setTimeout(function () {
+                      d = parseInt(w.attr("class").match(/\d/g)[0]);
+                      s(0)
+                  }, 100)
+              } else {
+                  if (x.type === "mouseleave") {
+                      o()
+                  }
+              }
+          })
+      })();
+      p.bind("mouseenter mouseleave", function (v) {
+          if (v.type === "mouseenter") {
+              h()
+          } else {
+              if (v.type === "mouseleave") {
+                  o()
+              }
+          }
+      });
+      l.scroll(function (w) {
+          var v = q.offset().top + q.height() - b(this).scrollTop() - 200;
+          h();
+          if (v > 0) {
+              o()
+          }
+      })
+  };
+  b.fn.slideShow.defaults = {
+      slides: "",
+      trigs: "",
+      tritag: "",
+      follow: "",
+      timer: 4000
+  }
 })(window, $);
 
-
-$(function () {
+(function () {
   var c = $("#indexSlideWrap"),
       k = $("#indexSlideLeft"),
       g = $("#indexSlideRight");
@@ -915,7 +914,7 @@ $(function () {
         return s
       })
   })();
-});
+}).call();
 
 </script>
 
